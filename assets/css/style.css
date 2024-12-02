@@ -1,0 +1,181 @@
+body{
+    background-image: linear-gradient(rgba(13, 17, 34, 0.4), rgba(0, 0, 0, .4)), url(/assets/img/moon.jpg);
+    background-size: auto 60%;
+    background-position: 45% -19%;
+    background-attachment:local;
+    background-repeat: repeat-y;
+}
+
+.btn-icon{
+    width: 3rem; 
+    height: 3rem;
+    border-color: #eeb0dc;
+    color:#eeb0dc;
+    text-shadow: 0px 0px 2px #eeb0dc;
+    box-shadow: 0px 0px 5px 1px rgba(238,176,220,0.94);
+}
+
+.portfolio .card{
+    border-radius: 1.4em;
+    height: 100%;
+}
+
+.highlight{
+    background-color: #7E67AB;
+    line-height: 1.0;
+    padding: 0.08rem;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break:clone;
+}
+
+.portfolio .card{
+    background-color: rgba(3,21,40, 0.9);
+    border-radius: 2em;
+    border-width: 2px; 
+    border-color: #675a72;
+}
+
+.resume .card:hover, .portfolio .card:hover{
+    background-color: rgba(13, 17, 34, 0.8);
+    border-color:mediumpurple;
+    box-shadow: 0px 0px 10px 3px rgba(238,176,220,0.94);
+}
+
+.resume .card{
+    border-color:#7E67AB;
+    border-left-width: 9px;
+    border-width: 2px;
+    border-radius: .8em;
+    background-color: transparent;
+}
+
+.bd-placeholder-img{
+    border-radius: 1.4em;
+    filter: brightness(70%);
+    height: 230px;
+    object-fit: cover;
+
+}
+
+.bd-placeholder-img:hover{
+    filter: brightness(100%);
+}
+
+.col .container-div{
+    min-height: 8em;
+    flex-direction: column;
+}
+
+.col .card .card-body{
+    flex-direction: column;
+}
+
+.skill{
+    height: auto;
+    width: 100%;
+    border-radius: 1.4em;
+    background-color:rgba(3, 21, 40,.9);
+}
+
+.skill.border{
+    border-width: 2px !important;
+    border-color: #b19ed8 !important; 
+}
+.skill:hover{
+    border-width: 10px;
+    border-color:mediumpurple;
+    box-shadow: 0px 0px 15px 1px rgba(238,176,220,0.94);
+}
+
+.skills h3{
+    text-shadow: 2px 2px 3px #000000;
+    color: #faf5fa;
+}
+
+.skills .card-body{
+    padding: 12px;
+}
+
+.skills .card{
+    background-color: transparent;
+    border: 12px;
+    max-width: 150px;
+    margin: auto;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(13, 17, 34, 0.3), rgba(197, 192, 214, 0.1)), url(/assets/img/moon.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 360%;
+    position: relative;
+    box-shadow: 0px 28px 47px #62517c;
+}
+
+.portfolio{
+    box-shadow: 0px 28px 27px #ee94f1;
+}
+
+.resume{
+    box-shadow: 0px 28px 57px #a27cda;
+}
+.full-height{
+    flex: 1;
+}
+
+.bg-darken{
+    background: rgba(3,21,40, 0.8);
+}
+
+nav{
+    background-color: rgba(22, 30, 58, 0.8);
+    box-shadow: 0 5px 3px -2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link{
+    color:#eeb0dc;
+}
+
+h2.text-body-emphasis{
+    color: #faf5fa !important;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.badge{
+    background-color: #7E67AB !important;
+}
+
+.list-group a{
+    color:#92dbdb;
+    text-decoration: none;
+}
+
+.list-group a:hover{
+    font-weight: 700 !important;
+    color:#92dbdb;
+    text-decoration: none;
+}
+
+.list-group i{
+    color:#a692cf;
+}
+
+.portfolio .card h3{
+    color: #92dbdb;
+}
+
+.footer-color{
+    border-top: 2px solid #cca3c0;
+    background-color: rgba(3, 21, 40,0.95);
+}
+
+.footer-color .btn-icon{
+    box-shadow: none;
+    border-color: #e0d3dd;
+    color:#ebdde7;
+    text-shadow: none;
+}
