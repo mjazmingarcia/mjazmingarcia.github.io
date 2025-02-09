@@ -42,11 +42,11 @@ body{
 }
 
 .resume .card{
+    background-color: rgba(3,21,40, 0.9);
     border-color:#7E67AB;
     border-left-width: 9px;
     border-width: 2px;
     border-radius: .8em;
-    background-color: transparent;
 }
 
 .bd-placeholder-img{
@@ -128,7 +128,7 @@ body{
 }
 
 .bg-darken{
-    background: rgba(3,21,40, 0.8);
+    background: rgba(4, 21, 40, 0.5);
 }
 
 nav{
