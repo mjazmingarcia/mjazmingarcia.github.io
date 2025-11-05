@@ -179,3 +179,7 @@ h2.text-body-emphasis{
     color:#ebdde7;
     text-shadow: none;
 }
+
+.portfolio .btn{
+    margin-bottom: 10px; 
+}
