@@ -183,3 +183,48 @@ h2.text-body-emphasis{
 .portfolio .btn{
     margin-bottom: 10px; 
 }
+
+.cards-container {
+  overflow: hidden;
+}
+
+
+.card-div {
+  display: none; /* Hidden by default */
+  animation: customAnim 0.4s ease;
+}
+
+@keyframes customAnim{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer .btn{
+    font-size: 18px; 
+    color:#f7f6f7;
+    font-weight: 600;
+    text-shadow: 0px 0px 2px #3a3137;
+    box-shadow: 0px 0px 2px 1px rgba(34, 32, 33, 0.94);
+    transition: 0.4s ease;
+    background:#7E67AB;
+}
+
+#myBtnContainer .btn:hover{
+    background: #eee7ec;
+    color: #7E67AB;
+    text-shadow: none;
+}
+
+#myBtnContainer .btn.active{
+    background: #eee7ec;
+    color: #7E67AB;
+    text-shadow: none;
+}
