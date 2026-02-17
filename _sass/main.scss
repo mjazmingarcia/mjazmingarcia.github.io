@@ -1,0 +1,206 @@
+.current {
+  color: green;
+}
+
+$color-purple: #7E67AB;
+$color-soft: #eeecf0;
+$color-aqua: #a4c2e7;
+
+.btn-icon{
+    width: 3rem; 
+    height: 3rem;
+}
+
+header {
+    background-color: rgba(219, 207, 233, 0.8);
+    box-shadow: 0 5px 3px -2px rgba(221, 227, 233, 0.1);
+}
+
+body{
+  background-image: linear-gradient(to top, #c7ccee 0%, #bdc2e8 1%, #ddd2e9 100%);
+}
+
+@mixin orientation($mode) {
+  @media screen and (orientation: $mode) {
+    @content;
+  }
+}
+
+body.wide-page {
+  background-image: linear-gradient(rgba(230, 221, 232, 0.5), rgba(213, 199, 214, 0.5)), url(/assets/images/background.png);
+  background-attachment:local;
+  background-repeat: repeat-y;
+ 
+  @include orientation(portrait) {
+    /* Styles applied only in portrait mode */
+    background-size: cover;
+  }
+
+  @include orientation(landscape) {
+    /* Styles applied only in landscape mode */
+    background-size: 100% auto;
+  }
+}
+
+
+.hero {
+  /* Example: full screen height hero with a background image */
+  min-height: 100vh;  
+  background-size: cover;
+  background-position: center;
+  /* Add padding-top to the hero content to prevent the fixed navbar from obscuring it */
+  margin-top: 0; /*optional*/
+  padding-top: 56px; /* Navbar's height */
+}
+
+.footer-color{
+    border-top: 4px solid $color-purple;
+    background-color: #eeeeff;
+}
+
+a, a:visited{
+  color: var(--bs-emphasis-color);
+}
+
+
+.portfolio .card{
+    border-radius: 1.4em;
+    height: 100%;
+    border-width: 2px;
+    border-color: $color-aqua;
+    background-color: rgba(whitesmoke, 0.8);
+    filter: brightness(90%);  
+    transition: 0.4s ease;
+}
+
+.resume .card{
+    border-radius: 1.4em;
+    height: 100%;
+    border-width: 2px;
+    border-left-width: 10px;
+    border-bottom-width: 3px;
+    border-color: $color-aqua;
+    background-color: rgba(whitesmoke, 0.8);
+    filter: brightness(90%);  
+    transition: 0.4s ease;
+}
+
+.bd-placeholder-img{
+    border-radius: 1.4em;
+    height: 230px;
+    object-fit: cover;
+}
+
+.resume .card:hover{
+    background-color: rgba ($color-soft, 0.6);
+    filter: none;
+    border-color: rgba($color-purple, 0.9);
+}
+
+.portfolio .card:hover{
+    background: linear-gradient(to bottom, #ebe8f0, #ede8ee, #e9e7ee, #e7dee7, #c8b3e4);
+    filter: brightness(100%);
+    border-color: rgba($color-purple, 0.9);
+}
+
+.col .container-div{
+    min-height: 8em;
+    flex-direction: column;
+}
+
+.col .card .card-body{
+    flex-direction: column;
+}
+
+.badge{
+    background-color: $color-purple !important;
+}
+
+.skills .card {
+    height: 100%;
+    background-color: $color-soft;
+    border-radius: 1em;
+    transition: 0.4s ease;
+}
+
+.skills .card:hover{
+    border-color: $color-purple;
+    box-shadow: 0px 0px 5px 1px rgba($color-purple, 0.94);
+
+}
+
+.skills .badge {
+    height: 50px;
+    width: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(0.2);
+    transition: 0.4s ease;
+    margin-bottom: 3px;
+}
+
+
+.skills .badge:hover{
+    filter: none;
+    background-color:#483f76 !important;  
+}
+
+.skills .badge img{
+    height: 30px;
+    width: auto;
+} 
+
+.list-group a:hover{
+    font-weight: 700 !important;
+    text-decoration: none;
+}
+
+
+.portfolio .btn{
+    margin-bottom: 10px; 
+}
+
+.card-div {
+  display: none; /* Hidden by default */
+  animation: customAnim 0.4s ease;
+}
+
+@keyframes customAnim{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer .btn{
+    font-size: 18px; 
+    color:$color-purple;
+    font-weight: 500;
+    box-shadow: 0px 0px 2px 1px rgba(45, 38, 43, 0.84);
+    transition: 0.4s ease;
+    background:$color-soft;
+}
+
+#myBtnContainer .btn:hover{
+    background: white;
+    color: $color-purple;
+    text-shadow: none;
+}
+
+#myBtnContainer .btn.active{
+    background: $color-purple;
+    color: whitesmoke;
+    text-shadow: none;
+    box-shadow: none;
+    border-color: $color-purple;
+    border-width: 1px;
+}
+
+//* Notebook *//

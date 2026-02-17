@@ -1,0 +1,27 @@
+<!-- portfolio -->
+<section class="portfolio py-5" id="projects">
+  <div class="container">
+    <h2 class="display-3 fw-bold text-body-emphasis text-center mt-4 mb-4">My Works</h2>
+    
+    <!--portfolio buttons-->
+    <div class="col gap-2 text-center align-items-center justify-content-center pb-4" id="myBtnContainer" >   
+      <button data-filter="all" class="btn active rounded-pill px-3 mx-2" type="button">Show All</button>
+      <button data-filter="data-science" class="btn rounded-pill px-3 mx-2" type="button" >Data Science</button>
+      <button data-filter="web-dev" class="btn rounded-pill px-3 mx-2" type="button" >Web Development</button> 
+      <button data-filter="design" class="btn rounded-pill px-3 mx-2" type="button" >Design</button>
+    </div>
+
+    <!-- cards -->
+    <div class="cards-container row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+      {% assign myprojects = site.projects | sort: "order" | reverse %}
+        {% for project in myprojects %}
+          {{ project }}
+        {% endfor %}  
+
+        <!-- Default modal for project cards with presentation -->
+        {%- include modal.html -%} 
+      
+    </div>
+    
+  </div>
+</section>

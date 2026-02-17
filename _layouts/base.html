@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" data-bs-theme="light">
+
+  {%- include head.html -%}
+
+  <body class="d-flex flex-column min-vh-100 {% if page.body-class %}{{ page.body-class }}{% endif %}">
+
+    {%- include header.html -%}
+    
+    <main class="page-content mt-5" aria-label="Content">
+      <div class="container-fluid p-0">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    {%- include sub-footer.html -%}
+
+  </body>
+
+</html>

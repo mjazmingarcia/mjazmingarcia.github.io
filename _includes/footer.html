@@ -1,0 +1,29 @@
+<div class="mt-auto container-fluid footer-color"> 
+      <footer class="py-3 px-3" id="contact">
+        <div class="row pb-3 mb-3 align-items-center border-secondary border-bottom ">
+          <div class="col-md-5 text-center offset-md-1">
+            <h2 class="display-4 fw-bold text-body-emphasis">Let's connect! </h2>
+            <p>Got a question, idea, or proposal? Go ahead and let's start building impactful solutions together.  </p>
+          </div>
+          
+          <div class="col-md-5 d-grid gap-2 btn-group-lg justify-content-center d-flex" aria-label="Contact">
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill d-flex justify-content-center btn-icon" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+              <span class="visually-hidden">LinkedIn profile</span>
+            </a>
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill d-flex justify-content-center btn-icon" title="GitHub">
+              <i class="bi bi-github"></i>
+              <span class="visually-hidden">GitHub profile</span>
+            </a>
+            <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill d-flex justify-content-center  btn-icon" title="Gmail">
+              <i class="bi bi-envelope-fill"></i>
+              <span class="visually-hidden">email address</span>
+            </a>
+          </div>
+
+        </div>
+        
+        <p class="text-center text-body-secondary">© {{ 'now' | date: "%Y" }} {{ site.title }} </p>
+        <p class="text-center text-body-secondary">Background image designed by <a class="text-decoration-none text-secondary-emphasis" href="https://www.zcool.com.cn/work/ZNTIwMzI4NjQ=.html" target="_blank" rel="noopener noreferrer">木偶T (PUPPET)</a></p>
+      </footer>
+    </div>

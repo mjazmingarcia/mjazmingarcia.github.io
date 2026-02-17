@@ -18,20 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Monica Garcia
+title: Mónica García
+brand: MG
 subtitle: Data & Development
 email: camonigar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Combining data science expertise with a web development background, I navigate the complex data landscape to create efficient, user-friendly digital solutions that communicate insights clearly and engage users through thoughtful design and attention to detail.
+  Data scientist with a web development foundation, adept at translating complex data into actionable insights and delivering optimized, efficient solutions that drives business impact through mindful design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: mjazmingarcia
-
+linkedin_username: moligarcia
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+collections:
+  projects:
+    output: false
+  notebooks:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

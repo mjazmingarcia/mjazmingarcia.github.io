@@ -1,0 +1,9 @@
+---
+layout: base
+---
+
+{{ content | 
+    replace: '<table>', '<div class="table-responsive"><table class="table">' |
+    replace: '<table border="1" class="dataframe">', '<div class="table-responsive"><table border="1" class="table">' |
+    replace: '</table>', '</table></div>' 
+    }}

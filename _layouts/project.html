@@ -1,0 +1,104 @@
+<div class="col card-div {{ page.category }}">
+  <div class="card p-3">
+    <img
+      class="bd-placeholder-img bg-secondary"
+      aria-label="Placeholder: Thumbnail"
+      src="{{ page.image_source }}"
+      focusable="false"
+      alt="{{ page. image_alt }}"
+    />
+    <div class="card-body d-flex px-0">
+      <h3 class="fs-5 fw-bold">{{ page.title }}</h3>
+      <!-- <p class="card-subtitle fw-semibold mb-3"> Social Service Experience</p> -->
+      <p class="card-text">{{ page.description }}</p>
+
+      <!-- tags and links -->
+      <div class="mt-auto">
+        <div
+          class="mt-auto container-div d-flex flex-column justify-content-between"
+        >
+          <div class="badge-group mb-4">
+            <div class="row">
+              <div class="col-auto mx-0 fw-semibold">Tags:</div>
+              <div class="col ps-auto me-2">
+                {% for tag in page.tags limit:3 %}
+                <span class="badge"> {{ tag }} </span>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+
+          <div class="list-group">
+            {% if page.repo %}
+            <a
+              class="fw-medium"
+              href="{{ page.repo }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-github" aria-hidden="true"></i>
+              Repository
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            {% endif %} 
+            
+            {% if page.demo %}
+            <a
+              class="fw-medium"
+              href="{{ page.demo }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-globe" aria-hidden="true"></i>
+              Live demo
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            {% endif %}
+            
+            {% if page.design %}
+            <a
+              class="fw-medium"
+              href="{{ page.design }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-image" aria-hidden="true"></i>
+              Design
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            {% endif %}
+
+            {% if page.notebook %}
+            <a
+              class="fw-medium"
+              href="{{ page.notebook }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="bi bi-journal-code" aria-hidden="true"></i>
+              Notebook
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+            {% endif %}
+            
+            {% if page.presentation %}
+            <a
+              class="fw-medium my-presentation" role="button"
+              data-bs-toggle="modal" 
+              data-bs-target="#exampleModal"
+              data-bs-title="{{ page.title }}"
+              data-bs-slides-path="{{ page.presentation }}"
+              data-bs-n-slides="{{ page.n }}"
+            >
+              <i class="bi bi-images" aria-hidden="true"></i>
+              Presentation <!--{{ page.title }}-->
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>            
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

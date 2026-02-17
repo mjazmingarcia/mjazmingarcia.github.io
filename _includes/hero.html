@@ -1,0 +1,24 @@
+<section class="hero d-flex full-height px-4 text-center align-items-center justify-content-center">
+  <div class="row">
+    <div class="mb-5 pb-5 mx-auto">
+      <h1 class="display-4 fw-bold text-body-emphasis"> {{ site.title }} </h1>
+      <h2 class="fs-4 fw-bold text-body-emphasis"> {{ site.subtitle | upcase }} </h2>
+      <p class="lead mt-4 mb-4 col-md-9 mx-auto"> {{ site.description }} <p>
+      
+      <div class="d-grid gap-2 btn-group-lg justify-content-center d-flex pb-4">
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill d-flex justify-content-center btn-icon" title="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+            <span class="visually-hidden">LinkedIn profile</span>
+          </a>
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill d-flex justify-content-center btn-icon" title="GitHub">
+            <i class="bi bi-github"></i>
+            <span class="visually-hidden">GitHub profile</span>
+          </a>
+          <a href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark rounded-pill d-flex justify-content-center btn-icon" title="Gmail">
+            <i class="bi bi-envelope-fill"></i>
+            <span class="visually-hidden">email address</span>
+          </a>
+      </div>
+    </div>
+  </div>
+</section>  
