@@ -20,10 +20,10 @@
 
 title: Mónica García
 brand: MG
-subtitle: Data & Development
+subtitle: Data Science
 email: camonigar@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Data scientist with a web development foundation, adept at translating complex data into actionable insights and delivering optimized, efficient solutions that drives business impact through mindful design.
+  Data scientist with a physics foundation, adept at translating complex data into actionable insights and delivering optimized, efficient solutions that drives business impact through mindful design.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
